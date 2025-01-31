@@ -1,0 +1,27 @@
+{
+  "name": "w3lifer/php-google-drive",
+  "keywords": [
+    "php",
+    "google",
+    "drive"
+  ],
+  "require": {
+    "php": "^8.0",
+    "google/apiclient": "^2.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "w3lifer\\Google\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Roman Grinyov",
+      "email": "w3lifer@gmail.com"
+    }
+  ],
+  "license": "MIT"
+}
