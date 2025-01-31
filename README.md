@@ -1,4 +1,4 @@
-# php-google-drive
+# [php-google-drive](https://packagist.org/packages/w3lifer/php-google-drive)
 
 - [Installation](#installation)
 - [Usage](#usage)
