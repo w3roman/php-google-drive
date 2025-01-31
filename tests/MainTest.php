@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-namespace w3lifer\Google\tests;
-
 use PHPUnit\Framework\TestCase;
 use w3lifer\Google\Drive;
 
