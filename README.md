@@ -8,6 +8,7 @@
   - [Create credentials](#create-credentials)
   - [Publish app](#publish-app)
 - [How to get a token](#how-to-get-a-token)
+- [Tests](#tests)
 
 ## Installation
 
@@ -144,3 +145,9 @@ Enter verification code: <here>
 ```
 
 **3. Enjoy!**
+
+## Tests
+
+``` sh
+make tests
+```
