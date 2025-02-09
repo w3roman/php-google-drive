@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace w3lifer\Google;
 
 use Exception;
@@ -12,13 +14,13 @@ use Google_Service_Drive_DriveFile;
  */
 class Drive
 {
-    private $pathToCredentials;
+    private string $pathToCredentials;
 
-    private $pathToToken;
+    private string $pathToToken;
 
-    private $client;
+    private Google_Client $client;
 
-    private $service;
+    private Google_Service_Drive $service;
 
     public function __construct($config)
     {
@@ -49,7 +51,7 @@ class Drive
         $this->service = new Google_Service_Drive($this->client);
     }
 
-    private function checkAccessToken()
+    private function checkAccessToken(): void
     {
         if (file_exists($this->pathToToken)) {
             $accessToken = json_decode(
@@ -79,7 +81,7 @@ class Drive
         }
     }
 
-    public function upload(string $pathToFile, array $folderIds = [])
+    public function upload(string $pathToFile, array $folderIds = []): string
     {
         $fileMetadata = new Google_Service_Drive_DriveFile([
             'name' => basename($pathToFile),
@@ -99,7 +101,7 @@ class Drive
     /**
      * @see https://stackoverflow.com/a/58611113/4223982
      */
-    public function createFolder(string $name)
+    public function createFolder(string $name): string
     {
         $file = new Google_Service_Drive_DriveFile();
         $file->setName($name);
