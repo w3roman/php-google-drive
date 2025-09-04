@@ -97,6 +97,8 @@ $fileId = $googleDrive->upload(
 
 > ![](img/14.png)
 
+> ![](img/15.png)
+
 ## How to get a token
 
 **1. Save the credential to disk and specify the path to them by setting the `pathToCredentials` configuration key**
@@ -124,19 +126,19 @@ Enter verification code:
 
 - Open the link in the message and choose desired account:
 
-![](img/15.png)
+![](img/16.png)
 
 - The warning "Google hasn't verified this app" may appear. Click "Advanced" and then "Go to ... (unsafe)":
 
-![](img/16.png)
+![](img/17.png)
 
 - On the next screen click "Continue":
 
-![](img/17.png)
+![](img/18.png)
 
 - After the redirect, copy the code from the address bar of your browser and paste it in the console:
 
-![](img/18.png)
+![](img/19.png)
 
 ```
 Open the following link in your browser:
