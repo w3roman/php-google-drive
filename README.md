@@ -12,13 +12,13 @@
 
 ## Installation
 
-``` sh
-composer require w3lifer/php-google-drive
+```sh
+composer req w3lifer/php-google-drive
 ```
 
 ## Usage
 
-``` php
+```php
 <?php
 
 // require_once __DIR__ . '/vendor/autoload.php';
@@ -101,7 +101,7 @@ $fileId = $googleDrive->upload(
 
 **1. Save the credential to disk and specify the path to them by setting the `pathToCredentials` configuration key**
 
-``` php
+```php
 $googleDrive = new Drive([
     'pathToCredentials' => __DIR__ . '/credentials.json', // Required
     'pathToToken' => __DIR__ . '/token.json', // Required
@@ -148,6 +148,6 @@ Enter verification code: <here>
 
 ## Tests
 
-``` sh
-make tests
+```sh
+make tests # make t
 ```
