@@ -11,7 +11,7 @@ build:
 
 tests: build
 	docker compose run --rm php8.0-cli composer i
-	docker compose run --rm php8.0-cli bash -c 'php tests/get-token.php'
+	docker compose run --rm php8.0-cli sh -c 'php tests/get-token.php'
 	docker compose run --rm php8.0-cli vendor/bin/phpunit --color=always tests/MainTest.php
 	docker compose run --rm php8.1-cli vendor/bin/phpunit --color=always tests/MainTest.php
 	docker compose run --rm php8.2-cli vendor/bin/phpunit --color=always tests/MainTest.php
