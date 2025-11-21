@@ -9,34 +9,34 @@ services:
 
   php8.0-cli:
     build: ./.docker/php/8.0/cli
-    container_name: php-helper-80
+    container_name: php-google-drive-80
     <<: *defaults
 
   php8.1-cli:
     build: ./.docker/php/8.1/cli
-    container_name: php-helper-81
+    container_name: php-google-drive-81
     <<: *defaults
 
   php8.2-cli:
     build: ./.docker/php/8.2/cli
-    container_name: php-helper-82
+    container_name: php-google-drive-82
     <<: *defaults
 
   php8.3-cli:
     build: ./.docker/php/8.3/cli
-    container_name: php-helper-83
+    container_name: php-google-drive-83
     <<: *defaults
 
   php8.4-cli:
     build: ./.docker/php/8.4/cli
-    container_name: php-helper-84
+    container_name: php-google-drive-84
     <<: *defaults
 
   php8.5-cli:
     build: ./.docker/php/8.5/cli
-    container_name: php-helper-85
+    container_name: php-google-drive-85
     <<: *defaults
 
 networks:
   default:
-    name: php-helper-default
+    name: php-google-drive-default
