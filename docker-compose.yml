@@ -37,6 +37,11 @@ services:
     container_name: php-google-drive-85
     <<: *defaults
 
+  php8.6-cli:
+    build: ./.docker/php/8.6/cli
+    container_name: php-google-drive-86
+    <<: *defaults
+
 networks:
   default:
     name: php-google-drive-default
